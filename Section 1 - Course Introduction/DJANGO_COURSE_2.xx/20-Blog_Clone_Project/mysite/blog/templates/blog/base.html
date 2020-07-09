@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Blog Project</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Alternative to Bootstrap 3 Glyphicons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    {# MEDIUM STYLE EDITOR#}
+    <script src="//cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
+
+    {# Custom CSS#}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    {# Fonts#}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+  </head>
+
+  <body class='loader'>
+
+    <nav class="navbar navbar-expand-lg bg-light techfont">
+      <div class="container">
+        <div class="navbar-nav align-items-center">
+          <a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My Tech blog</a>
+          <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+          <a class="nav-item nav-link" href="https://www.github.com">Github</a>
+          <a class="nav-item nav-link" href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+        <div class="navbar-nav align-items-center ml-auto">
+          {% if user.is_authenticated %}
+            <a class="nav-item nav-link" href="{% url 'post_new' %}">New Post</a>
+            <a class="nav-item nav-link" href="{% url 'post_draft_list' %}">Drafts</a>
+            <a class="nav-item nav-link" href="{% url 'logout' %}">Log out</a>
+            <a >Welcome: {{ user.username }}</a>
+          {% else %}
+            <a class="nav-item nav-link" href="{% url 'login' %}" aria-label="Login">
+              <span class="fa fa-user" aria-hidden="true"></span></a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+
+    {# The actual blog posts#}
+          <div class="content container">
+              <div class="row">
+                  <div class="col-md-8">
+                    <div class="blog_posts">
+                      {% block content %}
+                      {% endblock %}
+
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+    {# SCRIPTS#}
+    <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
+
+  </body>
+</html>
