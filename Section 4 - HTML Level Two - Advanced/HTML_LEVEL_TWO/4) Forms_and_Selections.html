@@ -6,6 +6,43 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Hotel Feedback Form</h1>
+
+    
+    <form method="get">
+        <h3>Are from USA? or outside of USA?</h3>
+
+        <!-- Radio Buttons -->
+        <!-- We wrote same name for both label same so that they both become 
+        connected and only one of them could be selected.-->
+
+        <label for="inusa">Outside: </label>
+        <input id="inusa" type="radio" name="loc" value="inside">
+
+        <label for="outusa">Inside: </label>
+        <input id="outusa" type="radio" name="loc" value="outside">
+
+        <br><br>
+
+        <h3>How was the service?</h3>
+
+        <!-- Drop down button -->
+
+        <select name="stars" id="">
+            <option value="Great">3</option>
+            <option value="Average">2</option>
+            <option value="Bad">1</option>
+        </select>
+
+        <h3>Any other feedback from your side?</h3>
+  
+        <!-- When you want to write multiple lines of text -->
+
+        <textarea name="mytextarea" id="" cols="50" rows="7"></textarea>
+        <br>
+        <input type="submit" name="" value="Submit">
+        
+    </form>
     
 </body>
 </html>
