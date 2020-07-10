@@ -1,0 +1,45 @@
+body{
+    background: lightblue;
+}
+
+#h1tag{
+    border: 1px solid black;
+}
+
+#ptag{
+    background: lightyellow;
+}
+
+#what{
+    color: purple;
+}
+
+#firstLi{
+    color: purple;
+    text-decoration: overline;
+}
+
+li + a{
+    color: black;
+}
+
+#textarea1{
+    border: 2px solid gray;
+}
+
+#loginText{
+    color: purple;
+}
+
+#pw, #em, #submit{
+    border: 1px solid brown 
+}
+
+.secondDiv{
+    background: darkblue;
+    border: 2px dotted yellow;
+}
+
+#insidedivp{
+    background: lightyellow;
+}
