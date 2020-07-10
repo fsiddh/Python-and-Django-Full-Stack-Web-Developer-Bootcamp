@@ -1,0 +1,20 @@
+body{
+    background: url(https://dynaimage.cdn.cnn.com/cnn/q_auto,w_847,c_fill,g_auto,h_476,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F181010112111-australia-best-beaches-tasmania-wineglass-bay-c-jason-charles-hill.jpg);
+    background-repeat: no-repeat;
+}
+
+p{
+    color: yellow;
+}
+
+div{
+    background: purple;
+    border-width: 3px;
+    border-style: double;
+    border-color: black;
+}
+
+span{
+    background: pink;
+    color: purple;
+}

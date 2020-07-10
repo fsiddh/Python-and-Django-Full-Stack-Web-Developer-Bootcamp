@@ -1,0 +1,36 @@
+/* SELECTORS: 
+1) '.class_name' is used for declaring classes
+2) '#id_name' is used for declaring id's
+3) '*' is used for all the text present on the screen */
+
+.firstDiv{
+    color: blue;
+}
+
+.secondDiv{
+    color: darkolivegreen;
+}
+
+#uniqueid{
+    color: purple;
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+/* To select unordered lists near the h3 tag  */
+h3 + ul{
+    border:3px dotted black ;
+    background: grey;
+}
+
+/* To select 'a tag' of list */
+li a{
+    color: red;
+}
+
+/* To specifically select 'a' of particular link */
+
+li a[href='https://www.npr.org']{
+    color: yellow;
+    border: 1.4px solid green;
+}

@@ -1,0 +1,16 @@
+/* For Comment (Or just press 'crtl+/' while on a line) */
+h1{
+    color: darkblue;
+}
+
+li{
+    color: rgb(0, 220, 100)
+}
+
+p{
+    color: #0d5408;
+}
+
+h4{
+    color: rgba(100, 0, 0, 0.35);
+}
