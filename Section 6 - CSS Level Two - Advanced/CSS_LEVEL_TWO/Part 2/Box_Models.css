@@ -1,0 +1,15 @@
+#top{
+    border: 2px solid blue;
+    width: 50%;
+    text-align: center;
+
+    /* margin: top right bottom left */
+    margin: auto;
+}
+
+#bottom{
+    border: 2px solid red;
+    width: 50%;
+    padding: 200px;
+    text-align: center;
+}

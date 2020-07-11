@@ -1,0 +1,32 @@
+/* top right down left */
+
+#heading{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.row{
+    margin: auto;
+}
+
+td{
+    height: 200px;
+    padding: 70px;
+    border: 5px solid white;
+}
+
+#one{
+    background: #E63946;
+}
+#two{
+    background: #F1FAEE;
+}
+#three{
+    background: #A8DADC;
+}
+#four{
+    background: #457B9D;
+}
+#five{
+    background: #1D3557;
+}
