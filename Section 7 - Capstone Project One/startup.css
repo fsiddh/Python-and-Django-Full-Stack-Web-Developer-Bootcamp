@@ -1,0 +1,32 @@
+body{
+    border: 60px solid #34bfaa;
+    border-top: 0px;
+    margin: 0px;
+    background: #011627;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+p{
+    padding: 5% 20% 0% 20%;
+}
+
+h2{
+    margin-bottom: 5%;
+}
+
+.userInput{
+    margin-bottom: 2%;
+    padding: 1% 8% 1% 8%;
+}
+
+.s{
+    color: #000000;
+    background: #d99c2b;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 20px;
+}
