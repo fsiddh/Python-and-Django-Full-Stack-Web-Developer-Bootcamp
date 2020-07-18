@@ -1,0 +1,20 @@
+/* .display-4{
+    width: auto;
+}
+ */
+
+.jumbotron jumbotron-fluid{
+    align-content: center;
+}
+
+td{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 50px;
+}
+
+table{
+    margin: auto;
+}
+
