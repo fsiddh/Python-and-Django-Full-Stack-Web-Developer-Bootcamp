@@ -11,15 +11,17 @@
     <h1>User</h1>
 
     {% if users %}
-        <div class='abc'>    
+        <div>    
             <ol>
                 {% for person in users %}
-                    <li>User Information:</li>
-                    <ul>
-                        <li>{{ person.first_name }}</li>
-                        <li>{{ person.last_name }}</li>
-                        <li>{{ person.email }}</li>
-                    </ul>
+                    <div class='abc'>    
+                        <li>User Information:</li>
+                        <ul>
+                            <li>{{ person.first_name }}</li>
+                            <li>{{ person.last_name }}</li>
+                            <li>{{ person.email }}</li>
+                        </ul>
+                    </div>    
                 {% endfor %}
             </ol>
         </div>    
