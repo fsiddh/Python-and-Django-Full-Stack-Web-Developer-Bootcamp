@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static "testApp/css/style.css" %}">
 </head>
 <body>
     <h1>User</h1>
+
+    {% if users %}
+        <div class='abc'>    
+            <ol>
+                {% for person in users %}
+                    <li>User Information:</li>
+                    <ul>
+                        <li>{{ person.first_name }}</li>
+                        <li>{{ person.last_name }}</li>
+                        <li>{{ person.email }}</li>
+                    </ul>
+                {% endfor %}
+            </ol>
+        </div>    
+    {% endif %}
 </body>
 </html>

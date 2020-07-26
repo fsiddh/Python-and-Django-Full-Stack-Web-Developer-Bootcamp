@@ -3,5 +3,5 @@ from testApp import views
 
 urlpatterns = [
     path('', views.index),
-    path('user/', views.users),
+    path('users/', views.users),
 ]
