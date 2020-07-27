@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Users</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
   </head>
   <body>
-    <div class="container">
-      <h1>Please sign up here!</h1>
-      <form method="POST">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" class='btn btn-primary' value="Submit">
-      </form>
-    </div>
+    <h1>Here are your users:</h1>
 
+    {% if users %}
+
+    <ol>
+      {% for person in users %}
+        <li>User Info</li>
+        <ul>
+          <li>First Name: {{person.first_name}}</li>
+          <li>Last Name: {{person.last_name}}</li>
+          <li>Email: {{person.email}}</li>
+        </ul>
+      {% endfor %}
+    </ol>
+
+    {% endif %}
   </body>
 </html>
