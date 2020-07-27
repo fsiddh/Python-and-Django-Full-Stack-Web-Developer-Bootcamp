@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Index</h1>
-</body>
-</html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+
+    {% block body_block%}
+
+    <h1>Hello and welcome to the site!</h1>
+      <!-- <h1>This is the index.html page</h1> -->
+    <h1>{{ text|cutout:"hello" }}</h1>
+    <h1>{{ number|add:99 }}</h1>
+    {% endblock %}
