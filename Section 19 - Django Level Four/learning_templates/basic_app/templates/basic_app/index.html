@@ -5,6 +5,8 @@
 
     <h1>Hello and welcome to the site!</h1>
       <!-- <h1>This is the index.html page</h1> -->
+    <h2>{{ text|add:'100' }}</h2>
+    <h2>{{ text|title }}</h2>
     <h1>{{ text|cutout:"hello" }}</h1>
     <h1>{{ number|add:99 }}</h1>
     {% endblock %}

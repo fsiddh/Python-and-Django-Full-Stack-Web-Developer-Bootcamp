@@ -19,6 +19,7 @@ def users(request):
 
     if request.method == 'POST':
         form = NewUserForm(request.POST)
+        print('request.POST: ', request.POST)
 
         if form.is_valid():
             form.save(commit=True)
