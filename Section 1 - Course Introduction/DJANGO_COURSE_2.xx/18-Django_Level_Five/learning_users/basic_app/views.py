@@ -80,9 +80,9 @@ def register(request):
     # This is the render and context dictionary to feed
     # back to the registration.html file page.
     return render(request,'basic_app/registration.html',
-                          {'user_form':user_form,
-                           'profile_form':profile_form,
-                           'registered':registered})
+                        {'user_form':user_form,
+                        'profile_form':profile_form,
+                        'registered':registered})
 
 def user_login(request):
 
